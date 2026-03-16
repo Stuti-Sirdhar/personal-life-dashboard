@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Life Dashboard</title>
+
+
+<link rel="stylesheet" href="app.css">
+
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <h2>Dashboard</h2>
+
+        <a href="https://github.com/yourusername/personal-life-dashboard" target="_blank">
+            <button type="button">View Code</button>
+        </a>
+
+        <ul>
+            <li><i class="fa-solid fa-list"></i> Tasks</li>
+            <li><i class="fa-solid fa-fire"></i> Habits</li>
+            <li><i class="fa-solid fa-note-sticky"></i> Notes</li>
+            <li><i class="fa-solid fa-clock"></i> Focus</li>
+        </ul>
+
+        <button type="button" id="themeToggle">Toggle Theme</button>
+
+    </div>
+
+
+    <!-- Main Content -->
+
+    <div class="main">
+
+        <h1 class="title">My Life Dashboard</h1>
+
+        <div class="header-info">
+            <h2 id="greeting"></h2>
+            <h3 id="clock"></h3>
+        </div>
+
+        <div class="dashboard">
+
+            <!-- Weather Widget -->
+
+            <div class="widget" draggable="true">
+
+                <h3>Weather</h3>
+
+                <div class="input-group">
+                    <input id="cityInput" placeholder="Enter city">
+                    <button type="button" id="getWeather">Check</button>
+                </div>
+
+                <p id="weatherResult">Enter a city to see weather</p>
+
+            </div>
+
+
+            <!-- Pomodoro Widget -->
+
+            <div class="widget" draggable="true">
+
+                <h3>Pomodoro Timer</h3>
+
+                <h2 id="timer">25:00</h2>
+
+                <button type="button" id="startTimer">Start</button>
+                <button type="button" id="resetTimer">Reset</button>
+
+            </div>
+
+
+            <!-- Tasks Widget -->
+
+            <div class="widget" draggable="true">
+
+                <h3>Tasks</h3>
+
+                <div class="input-group">
+                    <input id="taskInput" placeholder="Add a task">
+                    <button type="button" id="addTask">Add</button>
+                </div>
+
+                <ul id="taskList"></ul>
+
+                <button type="button" id="clearTasks">Clear All</button>
+
+            </div>
+
+
+            <!-- Notes Widget -->
+
+            <div class="widget" draggable="true">
+
+                <h3>Notes</h3>
+
+                <textarea id="notesArea"
+                    placeholder="Write your notes here..."></textarea>
+
+                <button type="button" id="saveNotes">Save</button>
+
+            </div>
+
+
+            <!-- Daily Quote Widget -->
+
+            <div class="widget" draggable="true">
+
+                <h3>Daily Quote</h3>
+
+                <p id="quoteText">Loading quote...</p>
+
+                <button type="button" id="newQuote">New Quote</button>
+
+            </div>
+
+
+            <!-- Habit Tracker Widget -->
+
+            <div class="widget" draggable="true">
+
+                <h3>Habit Tracker</h3>
+
+                <div class="input-group">
+                    <input id="habitInput" placeholder="Add a habit">
+                    <button type="button" id="addHabit">Add</button>
+                </div>
+
+                <ul id="habitList"></ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Footer -->
+
+<footer class="footer">
+    Built by Stuti • 2026
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
+
+

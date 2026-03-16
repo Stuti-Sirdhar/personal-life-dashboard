@@ -1,0 +1,247 @@
+body{
+font-family:Arial,sans-serif;
+background:#0f172a;
+color:white;
+margin:0;
+padding:20px;
+}
+
+.container{
+display:flex;
+}
+
+/* Sidebar */
+
+.sidebar{
+width:220px;
+background:#020617;
+padding:20px;
+min-height:100vh;
+position:sticky;
+top:0;
+}
+
+.sidebar h2{
+margin-bottom:20px;
+}
+
+.sidebar ul{
+list-style:none;
+padding:0;
+}
+
+.sidebar li{
+padding:12px;
+cursor:pointer;
+border-radius:8px;
+}
+
+.sidebar li:hover{
+background:#b9bec5;
+}
+
+.sidebar li i{
+margin-right:10px;
+}
+
+/* Main */
+
+.main{
+flex:1;
+padding:20px;
+}
+
+.title{
+text-align:center;
+margin-bottom:10px;
+}
+
+.header-info{
+text-align:center;
+margin-bottom:20px;
+}
+
+#clock{
+font-size:24px;
+color:#38bdf8;
+}
+
+/* Dashboard grid */
+
+.dashboard{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+/* Widgets */
+
+.widget{
+background:#1e293b;
+padding:24px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+border:1px solid rgba(255,255,255,0.05);
+transition:0.3s;
+cursor:grab;
+user-select:none;
+}
+
+.widget:hover{
+transform:translateY(-5px);
+box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
+
+.widget h3{
+margin-bottom:15px;
+padding-bottom:6px;
+border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+/* Inputs */
+
+.input-group{
+display:flex;
+gap:10px;
+margin-bottom:10px;
+}
+
+input,textarea{
+width:100%;
+padding:10px;
+border-radius:8px;
+border:none;
+background:#0f172a;
+color:white;
+}
+
+textarea{
+height:100px;
+}
+
+/* Buttons */
+
+button{
+background:#3b82f6;
+border:none;
+color:white;
+padding:8px 14px;
+border-radius:6px;
+cursor:pointer;
+transition:0.2s;
+}
+
+button:hover{
+background:#2563eb;
+}
+
+/* Tasks */
+
+#taskList{
+list-style:none;
+padding:0;
+margin-top:10px;
+}
+
+#taskList li{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#334155;
+padding:8px 10px;
+border-radius:6px;
+margin-top:8px;
+}
+
+#taskList li:hover{
+background:#475569;
+}
+
+#taskList button{
+background:#ef4444;
+font-size:12px;
+}
+
+/* Habits */
+
+#habitList{
+list-style:none;
+padding:0;
+margin-top:10px;
+}
+
+#habitList li{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#334155;
+padding:8px 10px;
+border-radius:6px;
+margin-top:8px;
+}
+
+/* Dragging */
+
+.widget.dragging{
+opacity:0.5;
+}
+
+/* Light mode */
+
+/* ---------- LIGHT MODE ---------- */
+
+.light-mode{
+    background:#f8fafc;
+    color:#0f172a;
+}
+
+/* sidebar */
+.light-mode .sidebar{
+    background:#e2e8f0;
+}
+
+/* widgets */
+.light-mode .widget{
+    background:#ffffff;
+    border:1px solid #e2e8f0;
+}
+
+/* inputs */
+.light-mode input,
+.light-mode textarea{
+    background:#f1f5f9;
+    color:#0f172a;
+    border:1px solid #cbd5f5;
+}
+
+/* task + habit items */
+.light-mode #taskList li,
+.light-mode #habitList li{
+    background:#f1f5f9;
+    color:#0f172a;
+}
+
+/* buttons */
+.light-mode button{
+    background:#3b82f6;
+    color:white;
+}
+
+.footer{
+text-align:center;
+margin-top:30px;
+opacity:0.6;
+font-size:14px;
+}
+#habitList button{
+    margin-left:8px;
+}
+
+#habitList button:last-child{
+    background:#ef4444;
+}
+.light-mode button:hover{
+    background:#305fc7;
+    transform:translateY(-1px);
+    box-shadow:0 3px 8px rgba(0,0,0,0.15);
+}
